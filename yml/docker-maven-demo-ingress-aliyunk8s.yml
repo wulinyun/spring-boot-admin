@@ -1,0 +1,58 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    name: spring-boot-admin-demo-ingress
+  name: spring-boot-admin-demo-ingress
+spec:
+  ports:
+    - port: 8080
+  selector:
+    app: spring-boot-admin-demo-ingress
+
+---
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: spring-boot-admin-demo-ingress
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: spring-boot-admin-demo-ingress
+    spec:
+      imagePullSecrets: 
+      - name: landa-aliyun-secret
+      containers:
+      - name: spring-boot-admin-demo-ingress
+        image: registry.cn-shanghai.aliyuncs.com/landasoft/landa-mas:spring-boot-admin-0.0.1-SNAPSHOT
+#        image: harbor.k8s.landaudev.com/demo/spring-boot-admin
+        ports:
+        - containerPort: 8080
+        resources:
+          limits:
+            #cpu: "1"             #限制pod申请最大的cpu数量为1个cpu
+            memory: 2048Mi        #申请内存最大值
+          requests:
+            #cpu: "0.5"           #pod申请的cpu数量为0.5个cpu
+            memory: 1024Mi        #申请内存的最小值
+        env: 
+          - name: JAVA_OPTS
+            value: -Dspring.datasource.url=jdbc:mysql://192.168.32.20:3306/landa_mas_demo?useUnicode=true&characterEncoding=utf8&useSSL=false -Dspring.datasource.username=demo -Dspring.datasource.password=demo
+
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: spring-boot-admin-demo-ingress
+spec:
+  rules:
+  - host: spring-boot-admin-demo-ingress.alik8s.landaudev.com
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: spring-boot-admin-demo-ingress
+          servicePort: 8080
+
