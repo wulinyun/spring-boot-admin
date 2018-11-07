@@ -54,12 +54,12 @@
         </dependency>
         <!-- 服务端认证模块 -->
         
-        <!-- 注册中心客户端配置
+        <!-- 注册中心客户端配置 -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-		 -->
+		
 	</dependencies>
 	<build>
 		<plugins>
