@@ -7,7 +7,7 @@ spring:
   mvc:
     throw-exception-if-no-handler-found: true
   application:
-    name: SpringBootAdmin
+    name: spring-boot-admin
   security:
     user:
       name: admin
