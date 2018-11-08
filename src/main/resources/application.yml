@@ -13,7 +13,25 @@ spring:
     admin:
       ui:
         title: 微应用管理
-
+      notify:
+        mail:
+          to: #发送给谁 
+          - lin.wu@landasoft.com
+          - victor.su@landasoft.com
+          from: lin.wu@landasoft.com #是谁发送出去的
+#邮件通知
+  mail:
+    host: smtp.exmail.qq.com
+    port: 25
+    username: lin.wu@landasoft.com
+    password: Wly@2018503
+    properties:
+      mail: 
+        smtp: 
+          auth: true
+          starttls: 
+            enable: true
+            required: true
 management:
   endpoints:
     web:
@@ -22,4 +40,8 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
-  
+      
+#显示被管理应用的版本号      
+info:
+  version: @project.version@
+ 
