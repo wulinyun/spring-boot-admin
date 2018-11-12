@@ -19,12 +19,11 @@ spring:
           - lin.wu@landasoft.com
           - victor.su@landasoft.com
           from: lin.wu@landasoft.com #是谁发送出去的
-#邮件通知
+#邮件通知#客户端授权码mBqHKCYsvAocdf36
   mail:
     host: smtp.exmail.qq.com
-    port: 25
     username: lin.wu@landasoft.com
-    password: Wly@2018503#客户端授权码hLcaeRBkmzkTaHXe
+    password: mBqHKCYsvAocdf36
     properties:
       mail: 
         smtp: 
