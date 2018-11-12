@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<configuration debug="true">
-
+<!-- Logback configuration. See http://logback.qos.ch/manual/index.html -->
+<configuration scan="true" scanPeriod="10 seconds">
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
     <!-- 彩色日志 -->
     <!-- 彩色日志依赖的渲染类 -->
     <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter" />
