@@ -24,7 +24,7 @@ spring:
     host: smtp.exmail.qq.com
     port: 25
     username: lin.wu@landasoft.com
-    password: hLcaeRBkmzkTaHXe#客户端授权码hLcaeRBkmzkTaHXe
+    password: Wly@2018503#客户端授权码hLcaeRBkmzkTaHXe
     properties:
       mail: 
         smtp: 
