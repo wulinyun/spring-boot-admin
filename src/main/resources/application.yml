@@ -40,6 +40,8 @@ management:
   endpoint:
     health:
       show-details: ALWAYS
+    shutdown: 
+      enabled: true
       
 #显示被管理应用的版本号      
 info:
