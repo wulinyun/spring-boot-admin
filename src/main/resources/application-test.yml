@@ -14,4 +14,4 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl: 
-      defaultZone: http://admin:landa@spring-boot-eureka-demo-ingress.k8s.landaudev.com:23456/eureka/
+      defaultZone: http://admin:landa@192.168.32.250:30001/eureka/
