@@ -44,4 +44,9 @@ management:
 #显示被管理应用的版本号      
 info:
   version: @project.version@
+  
+ #日志配置     
+logging: 
+  path: logs/log
+#  config: classpath:logback.xml
  
