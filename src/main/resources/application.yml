@@ -23,7 +23,7 @@ spring:
   mail:
     host: smtp.exmail.qq.com
     username: lin.wu@landasoft.com
-    password: mBqHKCYsvAocdf36
+    password: Wly@2018503
     properties:
       mail: 
         smtp: 
