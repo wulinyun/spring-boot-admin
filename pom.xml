@@ -161,6 +161,10 @@
 					<serverId>docker-k8s-harbor</serverId>
 					<registryUrl>https://harbor.k8s.landaudev.com</registryUrl>
 					  -->
+					<!-- 比格云k8s私有镜像仓库
+					<serverId>docker-bigger-k8s-harbor</serverId>
+					<registryUrl>https://harbor.biggerk8s.landaudev.com</registryUrl>
+					  -->
 					 <!-- 阿里云私有镜像仓库  -->
 					<serverId>docker-aliyun-harbor</serverId>
 					<registryUrl>registry.cn-shanghai.aliyuncs.com</registryUrl>
