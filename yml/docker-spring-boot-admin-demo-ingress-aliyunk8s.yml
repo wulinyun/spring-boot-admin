@@ -26,7 +26,7 @@ spec:
       - name: landa-aliyun-secret
       containers:
       - name: spring-boot-admin-demo-ingress
-        image: registry.cn-shanghai.aliyuncs.com/landasoft/landa-mas:spring-boot-admin-0.0.1-SNAPSHOT
+        image: registry.cn-shanghai.aliyuncs.com/landasoft/landa-mas:spring-boot-admin-v0.0.1
 #        image: harbor.k8s.landaudev.com/demo/spring-boot-admin
         ports:
         - containerPort: 8080
