@@ -26,7 +26,7 @@ spec:
       - name: landa-biggeryun-secret
       containers:
       - name: spring-boot-admin-demo-ingress
-        image: harbor.biggerk8s.landaudev.com/landa-mas/spring-boot-admin:lastest
+        image: harbor.biggerk8s.landaudev.com/landa-mas/spring-boot-admin:latest
 #        image: harbor.k8s.landaudev.com/demo/spring-boot-admin
         ports:
         - containerPort: 8080
