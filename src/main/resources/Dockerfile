@@ -5,7 +5,9 @@ VOLUME /tmp
 ENV TZ=Asia/Shanghai
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 #spring-boot-admin-0.0.1-SNAPSHOT.jar 请确认构建的jar包名称
-ADD spring-boot-admin.jar app.jar
+#ADD spring-boot-admin.jar app.jar
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
 RUN bash -c 'touch /app.jar'
 #增加通过使用环境变量的方式对项目配置文件运行时参数进行修改，从而达到一份镜像多份部署的作用
 ENV JAVA_OPTS=""
