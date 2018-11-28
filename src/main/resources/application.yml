@@ -16,7 +16,7 @@ spring:
       notify:
         mail:
           to: #发送给谁 
-          - lin.wu@landasoft.com
+          #- lin.wu@landasoft.com
           #- victor.su@landasoft.com
           from: lin.wu@landasoft.com #是谁发送出去的
 #邮件通知#客户端授权码mBqHKCYsvAocdf36
