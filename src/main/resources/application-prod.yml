@@ -14,4 +14,4 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl: 
-      defaultZone: http://106.15.187.226:30001/eureka/
+      defaultZone: http://172.19.6.126:30001/eureka/
