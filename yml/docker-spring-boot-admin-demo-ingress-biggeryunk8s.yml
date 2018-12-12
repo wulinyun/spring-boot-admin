@@ -48,7 +48,7 @@ metadata:
   name: spring-boot-admin-demo-ingress
 spec:
   rules:
-  - host: spring-boot-admin-demo-ingress.biggerk8s.landaudev.com
+  - host: spring-boot-admin-demo-ingress.biggerk8s.landacloud.com
     http:
       paths:
       - path: /
