@@ -33,10 +33,10 @@ spec:
         resources:
           limits:
             #cpu: "1"             #限制pod申请最大的cpu数量为1个cpu
-            memory: 3072Mi        #申请内存最大值
+            memory: 3072Mi        #申请内存最大值 3G
           requests:
             #cpu: "0.5"           #pod申请的cpu数量为0.5个cpu
-            memory: 1024Mi        #申请内存的最小值
+            memory: 2048Mi        #申请内存的最小值 2G
         env: 
           - name: JAVA_OPTS
             value: -Deureka.client.serviceUrl.defaultZone=http://10.100.10.94:30001/eureka/
